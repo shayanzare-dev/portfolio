@@ -1,8 +1,8 @@
 const defaultResourceUrl =
-    'https://raw.githubusercontent.com/shayanzare-dev/porfolio/main/resource';
+    'https://raw.githubusercontent.com/shayanzare-dev/shayan-zare-portfolio/main/resource';
 
 /// avatar image
-const defaultImageAvatarUrl = '$defaultResourceUrl/image/profile.jpg';
+const defaultImageAvatarUrl = '$defaultResourceUrl/image/profile.png';
 
 /// cv file
 const cvUrl = '$defaultResourceUrl/cv/shayanzare_cv.pdf';

@@ -18,10 +18,8 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(
-      _current != null,
-      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
-    );
+    assert(_current != null,
+        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
     return _current!;
   }
 
@@ -43,10 +41,8 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(
-      instance != null,
-      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
-    );
+    assert(instance != null,
+        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
     return instance!;
   }
 
@@ -76,12 +72,22 @@ class S {
 
   /// `Shayan`
   String get name {
-    return Intl.message('Shayan', name: 'name', desc: '', args: []);
+    return Intl.message(
+      'Shayan',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Zare`
   String get family {
-    return Intl.message('Zare', name: 'family', desc: '', args: []);
+    return Intl.message(
+      'Zare',
+      name: 'family',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Find me in Socials`
@@ -96,22 +102,42 @@ class S {
 
   /// `Twitter`
   String get twitter {
-    return Intl.message('Twitter', name: 'twitter', desc: '', args: []);
+    return Intl.message(
+      'Twitter',
+      name: 'twitter',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `LinkedIn`
   String get linkedIn {
-    return Intl.message('LinkedIn', name: 'linkedIn', desc: '', args: []);
+    return Intl.message(
+      'LinkedIn',
+      name: 'linkedIn',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Github`
   String get github {
-    return Intl.message('Github', name: 'github', desc: '', args: []);
+    return Intl.message(
+      'Github',
+      name: 'github',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Medium`
   String get medium {
-    return Intl.message('Medium', name: 'medium', desc: '', args: []);
+    return Intl.message(
+      'Medium',
+      name: 'medium',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Stack Overflow`
@@ -126,7 +152,12 @@ class S {
 
   /// `telegram`
   String get telegram {
-    return Intl.message('telegram', name: 'telegram', desc: '', args: []);
+    return Intl.message(
+      'telegram',
+      name: 'telegram',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Software Developer`
@@ -141,12 +172,22 @@ class S {
 
   /// `Download CV`
   String get cvButton {
-    return Intl.message('Download CV', name: 'cvButton', desc: '', args: []);
+    return Intl.message(
+      'Download CV',
+      name: 'cvButton',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Hire Me!`
   String get hireMe {
-    return Intl.message('Hire Me!', name: 'hireMe', desc: '', args: []);
+    return Intl.message(
+      'Hire Me!',
+      name: 'hireMe',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `I'm a software developer who loves building innovative apps, learning continuously, and tackling challenges. I specialize in mobile development using Flutter and React Native, creating smooth, scalable, and cross-platform mobile experiences.`
@@ -161,7 +202,12 @@ class S {
 
   /// `Open Source`
   String get openSource {
-    return Intl.message('Open Source', name: 'openSource', desc: '', args: []);
+    return Intl.message(
+      'Open Source',
+      name: 'openSource',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Open source has been one of my greatest teachers  it shaped how I think, build, and collaborate. Today, I’m proud to give back to the same community that fueled my growth. I dedicate part of my time to contributing to open-source projects, sharing knowledge, and engaging with developer communities around the world. Even this portfolio is open source a reflection of my belief that great software is built in the open.`
@@ -204,10 +250,10 @@ class S {
     );
   }
 
-  /// `I'm curious about product design methods and tools and passionate to read about them. I also have the ability to use tools like Adobe XD and Figma.`
+  /// `I’m deeply interested in product design principles, tools, and user-centered design methods. I enjoy learning how great products are crafted from idea to experience. Skilled in Figma and Adobe XD, I use these tools to translate concepts into clean, intuitive, and visually engaging mobile interfaces.`
   String get designToolsDescription {
     return Intl.message(
-      'I\'m curious about product design methods and tools and passionate to read about them. I also have the ability to use tools like Adobe XD and Figma.',
+      'I’m deeply interested in product design principles, tools, and user-centered design methods. I enjoy learning how great products are crafted from idea to experience. Skilled in Figma and Adobe XD, I use these tools to translate concepts into clean, intuitive, and visually engaging mobile interfaces.',
       name: 'designToolsDescription',
       desc: '',
       args: [],
@@ -226,12 +272,22 @@ class S {
 
   /// `Founder`
   String get founder {
-    return Intl.message('Founder', name: 'founder', desc: '', args: []);
+    return Intl.message(
+      'Founder',
+      name: 'founder',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `2021`
   String get value2021 {
-    return Intl.message('2021', name: 'value2021', desc: '', args: []);
+    return Intl.message(
+      '2021',
+      name: 'value2021',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Mobile Developer`
