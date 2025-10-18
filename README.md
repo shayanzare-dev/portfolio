@@ -1,8 +1,8 @@
 # 🌟 Shayan Zare - Personal Portfolio
 
-![Website Online](https://img.shields.io/badge/website-online-brightgreen?style=for-the-badge)
-![Deploy](https://img.shields.io/badge/deploy-ready-blue?style=for-the-badge)
-![Releases](https://img.shields.io/badge/releases-v1.0.0-orange?style=for-the-badge)
+![Website Online](https://shayanzare-dev.github.io/portfolio/)
+![Deploy](https://github.com/shayanzare-dev/portfolio/actions)
+![Releases](https://github.com/shayanzare-dev/portfolio/releases)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
 A sleek, modern, and responsive **personal portfolio** to showcase projects, professional info, and social links. Built with **Flutter** for **Web, Android, and iOS** with a single codebase. Supports **light & dark themes** and is **bilingual** (English / Persian).
