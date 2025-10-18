@@ -8,15 +8,16 @@ import 'resource/theme/theme.dart';
 class Portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
-    title: 'Shayan Zare Portfolio',
-    theme: portfolioTheme,
-    localizationsDelegates: [
-      S.delegate,
-      GlobalMaterialLocalizations.delegate,
-      GlobalWidgetsLocalizations.delegate,
-      GlobalCupertinoLocalizations.delegate,
-    ],
-    supportedLocales: S.delegate.supportedLocales,
-    home: HomeScreen(),
-  );
+    
+        title: 'Shayan Zare Portfolio',
+        theme: portfolioTheme,
+        localizationsDelegates: [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: S.delegate.supportedLocales,
+        home: HomeScreen(),
+      );
 }
