@@ -103,7 +103,7 @@ class AboutMe extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
                 Expanded(
-                  flex: context.isTablet() ? 3 : 2,
+                  flex: context.isTablet() ? 4 : 3,
                   child: imageAvatar,
                 ),
                 Expanded(
