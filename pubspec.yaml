@@ -24,7 +24,7 @@ dev_dependencies:
   pedantic: ^1.11.0
   intl_utils: ^2.8.1
   build_runner: ^2.0.4
-  build_web_compilers: ^4.1.1
+  build_web_compilers: ^4.0.11
 
 flutter:
   uses-material-design: true
