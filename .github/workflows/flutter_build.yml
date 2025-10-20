@@ -18,7 +18,7 @@ jobs:
       - name: 🔧 Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version-file: .fvm/fvm_config.json
+          flutter-version: '3.32.7'
 
       - name: 📦 Get dependencies
         run: flutter pub get
