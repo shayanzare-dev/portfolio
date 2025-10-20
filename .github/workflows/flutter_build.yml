@@ -1,95 +1,117 @@
-name: Flutter CI/CD
+name: 🚀 Flutter Full CI/CD
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:  # اجازه اجرای دستی هم میده
 
 jobs:
   build:
-    name: Build Flutter App
     runs-on: ubuntu-latest
+    name: 🏗️ Build Flutter Web + Android + Desktop
 
     steps:
-      - name: Checkout
+      - name: 🧩 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Flutter
+      - name: 🔧 Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.24.0"
+          flutter-version: stable
+          channel: stable
 
-      - name: Install dependencies
+      - name: 📦 Get dependencies
         run: flutter pub get
 
-      - name: Build Web
+      # ---- Build Web ----
+      - name: 🌐 Build Flutter Web
         run: flutter build web --release
 
-      - name: Build Android APK
+      - name: 🚫 Disable Jekyll
+        run: touch build/web/.nojekyll
+
+      # ---- Build Android APK ----
+      - name: 🤖 Build Android APK
         run: flutter build apk --release
 
-      - name: Build iOS
-        if: runner.os == 'macOS'
-        run: flutter build ios --release --no-codesign
-
-      - name: Build Windows
+      # ---- Build Windows / macOS (Optional) ----
+      - name: 🪟 Try to Build Windows (skip if unsupported)
         if: runner.os == 'Windows'
-        run: flutter build windows --release
+        run: flutter build windows --release || echo "Windows not supported on this runner"
 
-      - name: Upload build artifacts
+      - name: 🍏 Try to Build macOS (skip if unsupported)
+        if: runner.os == 'macOS'
+        run: flutter build macos --release || echo "macOS not supported on this runner"
+
+      # ---- Package build outputs ----
+      - name: 📦 Package artifacts
+        run: |
+          mkdir artifacts
+          cp build/app/outputs/flutter-apk/app-release.apk artifacts/ || echo "No APK found"
+          zip -r artifacts/flutter_web_build.zip build/web || echo "No web build found"
+          zip -r artifacts/flutter_windows_build.zip build/windows/runner/Release || echo "No windows build found"
+          zip -r artifacts/flutter_macos_build.zip build/macos/Build/Products/Release || echo "No macos build found"
+
+      - name: 📤 Upload artifacts (temporary)
         uses: actions/upload-artifact@v4
         with:
           name: flutter-builds
-          path: |
-            build/app/outputs/flutter-apk/app-release.apk
-            build/web
-            build/ios/iphoneos
-            build/windows/runner/Release/
+          path: artifacts/
 
   deploy_web:
-    name: Deploy Web to GitHub Pages
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
+    name: 🌍 Deploy Web to GitHub Pages
 
     steps:
-      - name: Checkout
+      - name: 🧩 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Flutter
+      - name: 🔧 Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          chanel: stable
+          flutter-version: stable
+          channel: stable
 
-      - name: Get dependencies
+      - name: 📦 Get dependencies
         run: flutter pub get
 
-      - name: Build Web
+      - name: 🌐 Build Flutter Web
         run: flutter build web --release
 
-      - name: Deploy to GitHub Pages
+      - name: 🚫 Disable Jekyll
+        run: touch build/web/.nojekyll
+
+      - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
 
   release:
-    name: Create GitHub Release
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
+    name: 🏁 Publish to GitHub Release
 
     steps:
-      - name: Download build artifacts
+      - name: 🧩 Download artifacts
         uses: actions/download-artifact@v4
         with:
           name: flutter-builds
-          path: ./builds
+          path: artifacts/
 
-      - name: Create Release
+      - name: 🏷️ Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            builds/build/app/outputs/flutter-apk/app-release.apk
           tag_name: v${{ github.run_number }}
-          name: Release v${{ github.run_number }}
+          name: "Flutter Build #${{ github.run_number }}"
+          body: |
+            🚀 Automated Flutter Build from commit: `${{ github.sha }}`
+            Includes:
+            - 🌐 Web build (deploys to GitHub Pages)
+            - 🤖 Android APK
+            - 💻 Desktop (if supported)
+          files: artifacts/**
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
