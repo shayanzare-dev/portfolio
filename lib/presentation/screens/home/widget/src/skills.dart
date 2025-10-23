@@ -31,7 +31,7 @@ class SkillsWidget extends StatelessWidget {
       ),
       SizedBox(
         child: SkillSection(
-            title: context.localization.androidSkills, skills: androidSkills),
+            title: context.localization.reactNativeSkills, skills: reactNativeSkills),
       ),
       SizedBox(
         child: SkillSection(
