@@ -14,7 +14,7 @@ class SocialLinksWidget extends StatelessWidget {
 
     final socialLinks = [
       SocialLink(
-        url: '',
+        url: 'https://x.com/Shayanzare2024',
         imagePath: 'assets/icon/social/twitter.png',
         title: localization.twitter,
       ),
