@@ -270,26 +270,6 @@ class S {
     );
   }
 
-  /// `Founder`
-  String get founder {
-    return Intl.message(
-      'Founder',
-      name: 'founder',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `2021`
-  String get value2021 {
-    return Intl.message(
-      '2021',
-      name: 'value2021',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Mobile Developer`
   String get mobileDeveloper {
     return Intl.message(
@@ -300,11 +280,11 @@ class S {
     );
   }
 
-  /// `Senior Developer`
-  String get seniorDeveloper {
+  /// `Senior Software Developer`
+  String get seniorSoftwareDeveloper {
     return Intl.message(
-      'Senior Developer',
-      name: 'seniorDeveloper',
+      'Senior Software Developer',
+      name: 'seniorSoftwareDeveloper',
       desc: '',
       args: [],
     );
@@ -320,101 +300,41 @@ class S {
     );
   }
 
-  /// `Flutter Developer`
-  String get flutterDeveloper {
+  /// `Mobile Lead Developer`
+  String get mobileLeadDeveloper {
     return Intl.message(
-      'Flutter Developer',
-      name: 'flutterDeveloper',
+      'Mobile Lead Developer',
+      name: 'mobileLeadDeveloper',
       desc: '',
       args: [],
     );
   }
 
-  /// `Snapp Mobile`
-  String get snappMobile {
+  /// `TaavSystem`
+  String get taavSystem {
     return Intl.message(
-      'Snapp Mobile',
-      name: 'snappMobile',
+      'TaavSystem',
+      name: 'taavSystem',
       desc: '',
       args: [],
     );
   }
 
-  /// `Rekab Technologies`
-  String get rekabTechnologies {
+  /// `4030 Taxi App`
+  String get taxi4030 {
     return Intl.message(
-      'Rekab Technologies',
-      name: 'rekabTechnologies',
+      '4030 Taxi App',
+      name: 'taxi4030',
       desc: '',
       args: [],
     );
   }
 
-  /// `RA Secret Application`
-  String get raSecretApplication {
+  /// `TaavSystem is a technology company focused on building intelligent enterprise software and digital products. The team combines modern engineering, AI-driven solutions, and user-centered design to simplify complex business processes and create lasting value.`
+  String get taavSystemDescription {
     return Intl.message(
-      'RA Secret Application',
-      name: 'raSecretApplication',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Dropp Commerce Application`
-  String get droppCommerceApplication {
-    return Intl.message(
-      'Dropp Commerce Application',
-      name: 'droppCommerceApplication',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Snapp Mobile is part of the Snapp companies, a stable parent company with a long history of successful project deliveries and access to nearly 150 designers and developers for project scalability and expertise.`
-  String get snappMobileDescription {
-    return Intl.message(
-      'Snapp Mobile is part of the Snapp companies, a stable parent company with a long history of successful project deliveries and access to nearly 150 designers and developers for project scalability and expertise.',
-      name: 'snappMobileDescription',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Rekab City is a multi-module trip planner platform. You can easily plan your trip with public transport and get live updates about network interruptions.`
-  String get rekabTechnologiesDescription {
-    return Intl.message(
-      'Rekab City is a multi-module trip planner platform. You can easily plan your trip with public transport and get live updates about network interruptions.',
-      name: 'rekabTechnologiesDescription',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Persian Flutter is a Community for Persian language developers of Flutter. Our goal is to be able to expand the Persian-speaking community through a series of events, trainings and experiences. For more information about this community and events, you can visit the PersianFlutter.com site.`
-  String get persianFlutterCommunityDescription {
-    return Intl.message(
-      'Persian Flutter is a Community for Persian language developers of Flutter. Our goal is to be able to expand the Persian-speaking community through a series of events, trainings and experiences. For more information about this community and events, you can visit the PersianFlutter.com site.',
-      name: 'persianFlutterCommunityDescription',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Rasecret is a product that focuses on personal development. I was in this team to participate in the development of the mobile application of this product. We used flutter to develop the mobile application of this product.`
-  String get rasecretDescription {
-    return Intl.message(
-      'Rasecret is a product that focuses on personal development. I was in this team to participate in the development of the mobile application of this product. We used flutter to develop the mobile application of this product.',
-      name: 'rasecretDescription',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `DroppCommerce is a location-based online store. We used the flutter and vue.js have been used to front-end development and node.js has been used back-end. you can find other info about it on DroppCommerce.ir`
-  String get droppCommerceDescription {
-    return Intl.message(
-      'DroppCommerce is a location-based online store. We used the flutter and vue.js have been used to front-end development and node.js has been used back-end. you can find other info about it on DroppCommerce.ir',
-      name: 'droppCommerceDescription',
+      'TaavSystem is a technology company focused on building intelligent enterprise software and digital products. The team combines modern engineering, AI-driven solutions, and user-centered design to simplify complex business processes and create lasting value.',
+      name: 'taavSystemDescription',
       desc: '',
       args: [],
     );
@@ -440,11 +360,11 @@ class S {
     );
   }
 
-  /// `Android Skills`
-  String get androidSkills {
+  /// `React Native skills`
+  String get reactNativeSkills {
     return Intl.message(
-      'Android Skills',
-      name: 'androidSkills',
+      'React Native skills',
+      name: 'reactNativeSkills',
       desc: '',
       args: [],
     );

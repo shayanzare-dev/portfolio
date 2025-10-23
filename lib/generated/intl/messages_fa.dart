@@ -22,21 +22,13 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "androidSkills": MessageLookupByLibrary.simpleMessage("Android Skills"),
         "cvButton": MessageLookupByLibrary.simpleMessage("دانلود رزومه"),
         "designSkills": MessageLookupByLibrary.simpleMessage("Design Skills"),
         "designTools": MessageLookupByLibrary.simpleMessage("ابزارهای طراحی"),
         "designToolsDescription": MessageLookupByLibrary.simpleMessage(
             "من علاقه ی زیادی به اصول طراحی محصول، ابزارهای طراحی و متدهای طراحی کاربرمحور دارم و از یادگیری روند خلق محصولات موفق از ایده تا تجربه نهایی لذت می برم.\nدر استفاده از ابزارهایی مانند Figma و Adobe XD مهارت دارم و از آن ها برای تبدیل مفاهیم به رابط های کاربری تمیز، شهودی و چشم نواز استفاده می کنم."),
-        "droppCommerceApplication":
-            MessageLookupByLibrary.simpleMessage("Dropp Commerce Application"),
-        "droppCommerceDescription":
-            MessageLookupByLibrary.simpleMessage("Dropp Commerce description"),
         "family": MessageLookupByLibrary.simpleMessage("زارع"),
-        "flutterDeveloper":
-            MessageLookupByLibrary.simpleMessage("Flutter Developer"),
         "flutterSkills": MessageLookupByLibrary.simpleMessage("Flutter Skills"),
-        "founder": MessageLookupByLibrary.simpleMessage("Founder"),
         "github": MessageLookupByLibrary.simpleMessage("گیت هاب"),
         "hireMe": MessageLookupByLibrary.simpleMessage("اطلاعات تماس"),
         "linkedIn": MessageLookupByLibrary.simpleMessage("لینکدین"),
@@ -53,15 +45,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "جامعه ی Open Source یکی از بزرگ ترین معلمان من بوده است؛ دیدگاه من به ساخت نرم افزار، همکاری و یادگیری را شکل داده است. امروز با افتخار بخشی از زمانم را صرف بازگرداندن به همان جامعه ای می کنم که مسیر رشدم را هموار کرد. در پروژه های متن باز مشارکت دارم، دانشم را به اشتراک می گذارم و با جوامع توسعه دهندگان در سراسر دنیا در ارتباطم. حتی این وب سایت نمونه کار من نیز متن باز است چون باور دارم نرم افزارهای بزرگ، در فضای باز ساخته می شوند."),
         "persianFlutterCommunity":
             MessageLookupByLibrary.simpleMessage("Persian Flutter Community"),
-        "persianFlutterCommunityDescription":
-            MessageLookupByLibrary.simpleMessage(
-                "Persian Flutter Community description"),
         "profileDescription": MessageLookupByLibrary.simpleMessage(
             "توسعه دهنده موبایل با بیش از ۳.۵ سال تجربه در ساخت اپلیکیشن های سریع، زیبا و پایدار با استفاده از Flutter و React Native. ایده های پیچیده را به تجربه های روان و جذاب تبدیل می کنم — با معماری تمیز، مقیاس پذیر و ماندگار. ذهنی کنجکاو، مسئولیت پذیر و با یک هدف ساده: خلق اپ هایی که زنده به نظر می رسند."),
-        "raSecretApplication":
-            MessageLookupByLibrary.simpleMessage("RA Secret Application"),
-        "rasecretDescription":
-            MessageLookupByLibrary.simpleMessage("RaSecret description"),
         "socialTitle": MessageLookupByLibrary.simpleMessage(
             "من رو در شبکه های اجتماعی پیدا کنید"),
         "softwareDeveloper":
@@ -71,7 +56,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "stackOverflow": MessageLookupByLibrary.simpleMessage("استک اورفلو"),
         "telegram": MessageLookupByLibrary.simpleMessage("تلگرام"),
         "title": MessageLookupByLibrary.simpleMessage("پورتفولیو شایان زارع"),
-        "twitter": MessageLookupByLibrary.simpleMessage("توییتر"),
-        "value2021": MessageLookupByLibrary.simpleMessage("2021")
+        "twitter": MessageLookupByLibrary.simpleMessage("توییتر")
       };
 }

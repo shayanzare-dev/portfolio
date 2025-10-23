@@ -22,27 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "androidSkills": MessageLookupByLibrary.simpleMessage("Android Skills"),
         "cvButton": MessageLookupByLibrary.simpleMessage("Download CV"),
         "designSkills": MessageLookupByLibrary.simpleMessage("Design Skills"),
         "designTools": MessageLookupByLibrary.simpleMessage("Design Tools"),
         "designToolsDescription": MessageLookupByLibrary.simpleMessage(
             "I’m deeply interested in product design principles, tools, and user-centered design methods. I enjoy learning how great products are crafted from idea to experience. Skilled in Figma and Adobe XD, I use these tools to translate concepts into clean, intuitive, and visually engaging mobile interfaces."),
-        "droppCommerceApplication":
-            MessageLookupByLibrary.simpleMessage("Dropp Commerce Application"),
-        "droppCommerceDescription": MessageLookupByLibrary.simpleMessage(
-            "DroppCommerce is a location-based online store. We used the flutter and vue.js have been used to front-end development and node.js has been used back-end. you can find other info about it on DroppCommerce.ir"),
         "family": MessageLookupByLibrary.simpleMessage("Zare"),
-        "flutterDeveloper":
-            MessageLookupByLibrary.simpleMessage("Flutter Developer"),
         "flutterSkills": MessageLookupByLibrary.simpleMessage("Flutter Skills"),
-        "founder": MessageLookupByLibrary.simpleMessage("Founder"),
         "github": MessageLookupByLibrary.simpleMessage("Github"),
         "hireMe": MessageLookupByLibrary.simpleMessage("Hire Me!"),
         "linkedIn": MessageLookupByLibrary.simpleMessage("LinkedIn"),
         "medium": MessageLookupByLibrary.simpleMessage("Medium"),
         "mobileDeveloper":
             MessageLookupByLibrary.simpleMessage("Mobile Developer"),
+        "mobileLeadDeveloper":
+            MessageLookupByLibrary.simpleMessage("Mobile Lead Developer"),
         "mobileTeamLead":
             MessageLookupByLibrary.simpleMessage("Mobile Team Lead"),
         "mobileTeamLeadDescription": MessageLookupByLibrary.simpleMessage(
@@ -53,25 +47,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Open source has been one of my greatest teachers  it shaped how I think, build, and collaborate. Today, I’m proud to give back to the same community that fueled my growth. I dedicate part of my time to contributing to open-source projects, sharing knowledge, and engaging with developer communities around the world. Even this portfolio is open source a reflection of my belief that great software is built in the open."),
         "persianFlutterCommunity":
             MessageLookupByLibrary.simpleMessage("Persian Flutter Community"),
-        "persianFlutterCommunityDescription": MessageLookupByLibrary.simpleMessage(
-            "Persian Flutter is a Community for Persian language developers of Flutter. Our goal is to be able to expand the Persian-speaking community through a series of events, trainings and experiences. For more information about this community and events, you can visit the PersianFlutter.com site."),
         "profileDescription": MessageLookupByLibrary.simpleMessage(
             "I am a results-oriented Mobile Developer with 3.5+ years of experience in cross-platform mobile development using Flutter and React Native. Skilled in designing, developing, and deploying high-performance mobile applications with clean architecture, efficient state management, and scalable code. I focus on creating intuitive, reliable, and visually engaging user experiences that drive real business impact. I thrive at the intersection of design and engineering, where creativity meets logic. I am highly proficient in writing test-driven code, optimizing app performance, and collaborating with cross-functional teams throughout the full development lifecycle. Constantly learning and improving, I aim to build mobile products that not only work flawlessly but also deliver meaningful experiences that users remember."),
-        "raSecretApplication":
-            MessageLookupByLibrary.simpleMessage("RA Secret Application"),
-        "rasecretDescription": MessageLookupByLibrary.simpleMessage(
-            "Rasecret is a product that focuses on personal development. I was in this team to participate in the development of the mobile application of this product. We used flutter to develop the mobile application of this product."),
-        "rekabTechnologies":
-            MessageLookupByLibrary.simpleMessage("Rekab Technologies"),
-        "rekabTechnologiesDescription": MessageLookupByLibrary.simpleMessage(
-            "Rekab City is a multi-module trip planner platform. You can easily plan your trip with public transport and get live updates about network interruptions."),
-        "seniorDeveloper":
-            MessageLookupByLibrary.simpleMessage("Senior Developer"),
+        "reactNativeSkills":
+            MessageLookupByLibrary.simpleMessage("React Native skills"),
         "seniorFlutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Senior Flutter Developer"),
-        "snappMobile": MessageLookupByLibrary.simpleMessage("Snapp Mobile"),
-        "snappMobileDescription": MessageLookupByLibrary.simpleMessage(
-            "Snapp Mobile is part of the Snapp companies, a stable parent company with a long history of successful project deliveries and access to nearly 150 designers and developers for project scalability and expertise."),
+        "seniorSoftwareDeveloper":
+            MessageLookupByLibrary.simpleMessage("Senior Software Developer"),
         "socialTitle":
             MessageLookupByLibrary.simpleMessage("Find me in Socials"),
         "softwareDeveloper":
@@ -81,9 +64,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "softwareSkills":
             MessageLookupByLibrary.simpleMessage("Software Skills"),
         "stackOverflow": MessageLookupByLibrary.simpleMessage("Stack Overflow"),
+        "taavSystem": MessageLookupByLibrary.simpleMessage("TaavSystem"),
+        "taavSystemDescription": MessageLookupByLibrary.simpleMessage(
+            "TaavSystem is a technology company focused on building intelligent enterprise software and digital products. The team combines modern engineering, AI-driven solutions, and user-centered design to simplify complex business processes and create lasting value."),
+        "taxi4030": MessageLookupByLibrary.simpleMessage("4030 Taxi App"),
         "telegram": MessageLookupByLibrary.simpleMessage("telegram"),
         "title": MessageLookupByLibrary.simpleMessage("Shayan Zare Portfolio"),
-        "twitter": MessageLookupByLibrary.simpleMessage("Twitter"),
-        "value2021": MessageLookupByLibrary.simpleMessage("2021")
+        "twitter": MessageLookupByLibrary.simpleMessage("Twitter")
       };
 }
