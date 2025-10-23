@@ -1,7 +1,7 @@
 name: portfolio
 description: A new Flutter application.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
@@ -22,6 +22,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   pedantic: ^1.11.0
+  flutter_launcher_icons: ^0.14.4
   intl_utils: ^2.8.1
   build_runner: ^2.0.4
   build_web_compilers: ^4.0.11
@@ -35,3 +36,19 @@ flutter:
 flutter_intl:
   main_locale: en_US
   enabled: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icon/logo.png"
+  windows:
+    generate: true
+    image_path: "assets/icon/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icon/logo.png"
