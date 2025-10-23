@@ -13,47 +13,24 @@ class ExperienceWidget extends StatelessWidget {
     final experiences = [
       SizedBox(
         child: TimeLineTile(
-          position: context.localization.seniorDeveloper,
-          description: context.localization.snappMobileDescription,
-          title: context.localization.snappMobile,
-          assetImage: 'icon/experience/snapp.png',
-          date: '2022-Present',
+          position: context.localization.seniorSoftwareDeveloper,
+          description: context.localization.taavSystemDescription,
+          title: context.localization.taavSystem,
+          urlTitle: 'TaavSystem',
+          url: 'https://taavsys.com',
+          assetImage: 'icon/experience/taavsys.png',
+          date: '2023',
         ),
       ),
       SizedBox(
         child: TimeLineTile(
-          position: context.localization.seniorFlutterDeveloper,
-          description: context.localization.rekabTechnologiesDescription,
-          title: context.localization.rekabTechnologies,
-          assetImage: 'icon/experience/rekab.png',
-          date: '2021-2022',
-        ),
-      ),
-      SizedBox(
-        child: TimeLineTile(
-          position: context.localization.founder,
-          description: context.localization.persianFlutterCommunityDescription,
-          title: context.localization.persianFlutterCommunity,
-          assetImage: 'icon/experience/persian_flutter.jpg',
-          date: '2021-Present',
-        ),
-      ),
-      SizedBox(
-        child: TimeLineTile(
-          position: context.localization.mobileDeveloper,
-          description: context.localization.rasecretDescription,
-          title: context.localization.raSecretApplication,
-          assetImage: 'icon/experience/ra.png',
-          date: '2019-2020',
-        ),
-      ),
-      SizedBox(
-        child: TimeLineTile(
-          position: context.localization.flutterDeveloper,
-          description: context.localization.droppCommerceDescription,
-          title: context.localization.droppCommerceApplication,
-          assetImage: 'icon/experience/dropp.png',
-          date: '2018-2019',
+          position: context.localization.mobileLeadDeveloper,
+          description: '',
+          title: context.localization.taxi4030,
+          urlTitle: 'Baram Company',
+          url: 'https://baramtec.com',
+          assetImage: 'icon/experience/baram.png',
+          date: '2025',
         ),
       ),
     ];
