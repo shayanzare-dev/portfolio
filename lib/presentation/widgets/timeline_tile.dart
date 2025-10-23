@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/presentation/widgets/adaptive_tag.dart';
+import 'package:url_launcher/link.dart';
 
 class TimeLineTile extends StatelessWidget {
   const TimeLineTile({
@@ -9,6 +10,8 @@ class TimeLineTile extends StatelessWidget {
     required this.description,
     required this.assetImage,
     this.date,
+    this.urlTitle,
+    this.url,
   }) : super(key: key);
 
   final String title;
@@ -16,6 +19,8 @@ class TimeLineTile extends StatelessWidget {
   final String description;
   final String assetImage;
   final String? date;
+  final String? urlTitle;
+  final String? url;
 
   @override
   Widget build(BuildContext context) {
@@ -75,6 +80,10 @@ class TimeLineTile extends StatelessWidget {
                           height: 1.4,
                         ),
                       ),
+                      if (url != null && urlTitle != null) ...[
+                        SizedBox(height: 8),
+                        _urlLauncher(),
+                      ]
                     ],
                   ),
                 ),
@@ -85,4 +94,13 @@ class TimeLineTile extends StatelessWidget {
       ),
     );
   }
+
+  Link _urlLauncher() => Link(
+        uri: Uri.parse(url!),
+        builder: (BuildContext context, Future<void> Function()? followLink) =>
+            InkWell(
+          onTap: followLink,
+          child: Text('🔗 ${urlTitle!}'),
+        ),
+      );
 }
