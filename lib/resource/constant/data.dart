@@ -19,8 +19,8 @@ const dart = '$defaultResourceUrl/icon/code/dart.png';
 const flutter = '$defaultResourceUrl/icon/code/flutter.png';
 const githubActions = '$defaultResourceUrl/icon/code/gh-actions.png';
 const git = '$defaultResourceUrl/icon/code/git.png';
-// TODO(SHAYAN ZARE): PUT THIS IMAGE PATH FOR ICONS
-const reactNative = '';
-const javaScript = '';
-const typeScript = '';
+const reactNative = '$defaultResourceUrl/icon/code/react-native.png';
+const javaScript = '$defaultResourceUrl/icon/code/javascript.png';
+const typeScript = '$defaultResourceUrl/icon/code/typescript.png';
+const figma = '$defaultResourceUrl/icon/code/figma.png';
 const reactive = '$defaultResourceUrl/icon/code/reactive.png';
